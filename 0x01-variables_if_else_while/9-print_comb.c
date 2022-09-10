@@ -16,7 +16,7 @@ int main(void)
 	if (x != 19)
 	{
 	putchar(',');
-	putcchar(' ');
+	putchar(' ');
 	}
 	}
 	putchar('\n');
