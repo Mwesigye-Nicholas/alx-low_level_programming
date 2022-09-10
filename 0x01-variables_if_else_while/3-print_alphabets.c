@@ -3,18 +3,16 @@
 /**
  * main - entry point
  *
- * Return: Is always zero
+ * Return: Always is 0
  *
  */
-
 int main(void)
 {
 	char a;
 
-	for (a = 'a'; a <= 'z' ; a++)
-	putchar(a);
-	putchar('\n');
+	for (a = 'a'; a <= z 'z'; a++)
+	putchar('a');
+	putchar('\n')
 	for (a = 'A'; a <= 'Z'; a++)
-	putchar(a);
-	return (0);
+	putchar('a');
 }
