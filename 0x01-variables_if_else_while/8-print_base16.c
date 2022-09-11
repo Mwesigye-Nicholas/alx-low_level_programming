@@ -5,7 +5,7 @@
  *
  * Return: Is always 0
  *
- */i
+ */
 int main(void)
 {
 	unsigned char a = '0';
