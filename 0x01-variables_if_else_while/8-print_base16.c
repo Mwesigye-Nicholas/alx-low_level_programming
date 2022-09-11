@@ -5,10 +5,10 @@
  *
  * Return: Is always 0
  *
- */
+ */i
 int main(void)
 {
-	char a;
+	unsigned char a = '0';
 	int i;
 
 	for (i = 0; i < 10; i++)
