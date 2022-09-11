@@ -16,9 +16,10 @@ int main(void)
 	putchar(i);
 	a++;
 	}
-	for (a = 'a'; a <= 'f'; a++)
+	a = '1';
+	for (i = 0; i <= 6; i++)
 	{
-	putchar(a);
+	putchar('0' + a);
 	a++;
 	}
 	putchar('\n');
