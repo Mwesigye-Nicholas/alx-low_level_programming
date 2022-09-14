@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * prinr_alpabet - fucntion to print abd
+ * print_alphabet_x10 - functio to  print abc 10 times
  *
- * Return 0
+ * Return: Always  0
  *
  */
-void print(void)
+void print_alphabet(void)
 {	
 	char x;
 	
-	for (x ='a'; x <= 'z'; x++)
+	for (x = 'a'; x <= 'z'; x++)
 	{
 	_putchar(x);
 	}
