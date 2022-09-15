@@ -7,7 +7,7 @@
 int main(void)
 {
 	long int n, a = 1, b = 1, s;
-	
+
 	printf("%ld", a);
 	for (n = 1; n < 50; ++n)
 	{
