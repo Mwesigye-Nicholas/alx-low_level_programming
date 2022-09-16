@@ -1,1 +1,1 @@
-The repo contains scripts about low level programming
+The directory contains information about debugging
