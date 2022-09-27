@@ -1,29 +1,48 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
-* print_buffer - prints a buffer
-* @b: buffer to print
-* @size: size of buffer
-*
-* Return: void
-*/
+ * print_buffer - prints a buffer
+ *
+ * @b: buffer.
+ *
+ * @size: size of buffer.
+ *
+ * Return: no return.
+ *
+ */
 
 void print_buffer(char *b, int size)
 {
-	int i;
+	int j, k, l;
 
-	for (i = 0; i <= (size - 1) / 10 && size; i++)
+	if (size <= 0)
+		printf("\n");
+	else
 	{
-		printf("%08x: ", i * 10);
-		if (i < size / 10)
+		for (j = 0; j < size; j += 10)
 		{
-			print_line(b, 9, i);
+			printf("%.8x:", j);
+			for (k = j; k < j + 10; k++)
+			{
+				if (k % 2 == 0)
+					printf(" ");
+				if (k < size)
+					printf("%.2x", *(b + k));
+				else
+					printf("  ");
+			}
+			printf(" ");
+			for (l = j; l < j + 10; l++)
+			{
+				if (l >= size)
+					break;
+				if (*(b + l) < 32 || *(b + l) > 126)
+					printf("%c", '.');
+				else
+					printf("%c", *(b + l));
+			}
+			printf("\n");
 		}
-		else
-		{
-			print_line(b, size % 10 - 1, i);
-		}
-		putchar('\n');
 	}
-	if (size == 0)
-	putchar('\n');
 }
