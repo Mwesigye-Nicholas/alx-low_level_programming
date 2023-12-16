@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 
 /**
  * main - this is the main function
@@ -8,7 +10,10 @@
 
 int main(void)
 {
-	int n = 1;
+	int n;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 
 	if (n > 0)
 	{
