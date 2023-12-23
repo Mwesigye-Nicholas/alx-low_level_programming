@@ -6,6 +6,7 @@
  *
  *
  * Return: 1 if c is lowercase & 0 otherwise
+ * @c: parameter
  */
 
 
