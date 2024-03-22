@@ -5,7 +5,6 @@
  *
  * Return: returns un integer
  */
-
 int main(void)
 {
 	int i;
